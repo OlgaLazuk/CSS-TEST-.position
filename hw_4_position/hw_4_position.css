@@ -1,0 +1,60 @@
+.parent {
+width: 500px;
+height: 500px;
+position: relative;
+}
+.square-blue {
+background-color: blue;
+width: 50%; 
+height: 50%;
+position: absolute;
+z-index: 1;
+left: 24%;
+top: 24%;
+}
+.square-blue:hover {
+background-color: rebeccapurple;
+z-index: 3;
+} 
+.yellow_square {
+background-color: yellow; 
+width: 25%; 
+height: 25%;
+position: absolute;
+z-index: 2;
+left: 36.5%;
+top: 36.5%;
+border-radius: 20px;
+}
+.red-circle-top-left, .red-circle-top-right,.red-circle-bottom-left, .red-circle-bottom-right {
+position: absolute; 
+width: 200px;
+height: 200px;
+background-color: red;  
+border-radius: 50%;
+}
+.red-circle-top-left:hover .red-circle-top-right:hover .red-circle-bottom-left:hover .red-circle-bottom-right:hover {
+z-index: 1;
+}
+.red-circle-top-left:hover {
+background-color: salmon;
+}
+.red-circle-top-right {
+right: 0;
+}
+.red-circle-top-right:hover {
+background-color: rgb(114, 218, 250);
+} 
+.red-circle-bottom-left {
+bottom: 0;
+}
+.red-circle-bottom-left:hover {
+background-color: rgb(114, 250, 114);
+}
+.red-circle-bottom-right {
+right: 0;
+bottom:0;
+}
+.red-circle-bottom-right:hover {
+background-color: rgb(220, 250, 114);
+}
